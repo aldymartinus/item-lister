@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <title>Item Lister</title>
+</head>
+
+<div class="flex justify-center">
+    <input type="text" name="txtSearch" id="txtSearch" placeholder="🔍Search" class="block mt-6 lg:mt-16 lg:mb-2 w-24 pl-4 border-2 w-auto py-2 px-28 shadow-sm rounded-md">
+</div>
+
+<body class="bg-gray-50">
+    <div class="flex justify-center">
+        <div class="w-auto h-16 bg-blue-500 rounded-md shadow-md mt-6 lg:mt-2 ring-1 flex px-24">
+            <h1 class="pt-3 text-2xl text-white font-semibold">Item Lister</h1>
+        </div>     
+    </div>
+   
+    <div class="flex justify-center">
+        <div class="card px-6 py-2 mt-1 pb-6 border-2 bg-white border-gray-200 w-auto h-auto rounded-xl shadow-md">
+
+            <form id="addForm">
+                <h1 class="text-xl mt-2 font-semibold">Add Items</h1>
+                <input type="text" name="txtInput" id="txtInput" class="py-1 border-2  mt-1 pl-1 rounded-sm border-gray-300">
+                <input type="submit" value="Submit" class="text-white font-semibold font-sans py-1 px-2 bg-blue-500 shadow-md rounded-sm ring-2 ring-blue-500 ring-opacity-40 hover:bg-blue-400 hover:shadow-lg">
+            </form>
+            
+
+            <h1 class="text-xl  mt-5 mb-2 font-semibold">Items</h1>
+            <ul id ="items">
+                <li class="items-list pl-2 py-2 mb-1 border-2 border-gray-300 rounded-sm shadow-sm flex justify-between">Items 1
+                        <button class="delete block bg-red-500 hover:bg-red-600 h-auto w-6 rounded-sm text-white font-semibold order-last mr-3">X</button>
+                </li>
+                <li class="item-list pl-2 py-2 mb-1 border-2 border-gray-300 rounded-sm shadow-sm flex justify-between">Items 2
+                    <button class="delete block bg-red-500 hover:bg-red-600 h-auto w-6 rounded-sm text-white font-semibold order-last mr-3">X</button>
+                </li>
+                <li class="item-list pl-2 py-2 mb-1 border-2 border-gray-300 rounded-sm shadow-sm flex justify-between">Items 3
+                    <button class="delete block bg-red-500 hover:bg-red-600 h-auto w-6 rounded-sm text-white font-semibold order-last mr-3">X</button>
+                </li>
+            </ul>
+
+        </div>  
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
